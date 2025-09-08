@@ -1,6 +1,18 @@
-var builder = WebApplication.CreateBuilder(args);
-var app = builder.Build();
+using Simuladoprovajava.Entities;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
 
-app.MapGet("/", () => "Hello World!");
+
+
+var builder = WebApplication.CreateBuilder(args);
+
+
+builder.Services.AddDbContext<SimuladoprovajavaDbContext>(options =>
+{
+    var sqlConn = Environment.GetEnvironmentVariable("SQL_CONNECTION");
+    
+    options.UseSqlServer(sqlConn);
+});
+var app = builder.Build();
 
 app.Run();

@@ -63,6 +63,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[9.0.8, )"
+            },
+            "usecases": {
+              "target": "Package",
+              "version": "[1.0.0, )"
             }
           },
           "imports": [

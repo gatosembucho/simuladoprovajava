@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "o4MjYyz2ZvU=",
+  "dgSpecHash": "N8DScYCyUNY=",
   "success": true,
   "projectFilePath": "C:\\Users\\malu_\\simulado\\simuladoprovajava\\simuladoprovajava.csproj",
   "expectedPackageFiles": [
@@ -82,7 +82,8 @@
     "C:\\Users\\malu_\\.nuget\\packages\\system.text.json\\9.0.8\\system.text.json.9.0.8.nupkg.sha512",
     "C:\\Users\\malu_\\.nuget\\packages\\system.threading.channels\\7.0.0\\system.threading.channels.7.0.0.nupkg.sha512",
     "C:\\Users\\malu_\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
-    "C:\\Users\\malu_\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512"
+    "C:\\Users\\malu_\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512",
+    "C:\\Users\\malu_\\.nuget\\packages\\usecases\\1.0.0\\usecases.1.0.0.nupkg.sha512"
   ],
   "logs": []
 }

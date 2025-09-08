@@ -1,0 +1,1 @@
+namespace Simuladoprovajava.EndPoints.Auth;

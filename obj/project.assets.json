@@ -1598,6 +1598,15 @@
             "rid": "win"
           }
         }
+      },
+      "UseCases/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net9.0/UseCases.dll": {}
+        },
+        "runtime": {
+          "lib/net9.0/UseCases.dll": {}
+        }
       }
     }
   },
@@ -4701,6 +4710,18 @@
         "system.windows.extensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "UseCases/1.0.0": {
+      "sha512": "t1OPgmjHwFxvl4SzIHbzQKCOUCDoU4RcUluIgmung4VFcQgBouO2I/EqO0Wc5f1GC1MJHTZt+oE2UKZR0x0Ehg==",
+      "type": "package",
+      "path": "usecases/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net9.0/UseCases.dll",
+        "usecases.1.0.0.nupkg.sha512",
+        "usecases.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
@@ -4708,7 +4729,8 @@
       "Microsoft.EntityFrameworkCore >= 9.0.8",
       "Microsoft.EntityFrameworkCore.Design >= 9.0.8",
       "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.8",
-      "Microsoft.EntityFrameworkCore.Tools >= 9.0.8"
+      "Microsoft.EntityFrameworkCore.Tools >= 9.0.8",
+      "usecases >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -4773,6 +4795,10 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[9.0.8, )"
+          },
+          "usecases": {
+            "target": "Package",
+            "version": "[1.0.0, )"
           }
         },
         "imports": [

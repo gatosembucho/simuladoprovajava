@@ -8,5 +8,5 @@ public class Fanfic
     public int AuthorID { get; set; }
     public int ShelfID { get; set; }
     public User Author { get; set; }
-    public Shelf Shelves { get; set; }
+    public Shelf Shelf { get; set; }
 }
