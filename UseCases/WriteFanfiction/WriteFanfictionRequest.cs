@@ -8,6 +8,7 @@ public record WriteFanfictionRequest
     public string Title { get; init; }
 
     [Required]
+    [MaxLength(6000)]
     public string Text { get; init; }
     
     public int AuthorID { get; init; }
