@@ -1,1 +1,3 @@
 namespace Simuladoprovajava.UseCases.WriteFanfiction;
+
+public record WriteFanfictionResponse;

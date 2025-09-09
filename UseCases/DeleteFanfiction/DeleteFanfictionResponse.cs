@@ -1,1 +1,3 @@
 namespace Simuladoprovajava.UseCases.DeleteFanfiction;
+
+public record DeleteFanfictionResponse;

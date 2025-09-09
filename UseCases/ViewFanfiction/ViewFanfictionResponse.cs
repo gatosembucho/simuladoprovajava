@@ -1,0 +1,3 @@
+namespace Simuladoprovajava.UseCases.ViewFanfiction;
+
+public record ViewFanfictionIResponse;
