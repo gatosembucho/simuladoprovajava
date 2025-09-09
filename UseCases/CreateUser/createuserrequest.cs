@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Simuladoprovajava.UseCases.CreateUser;
 
-public record CreateUser
+public record CreateUserRequest
 {
 
     [Required]
@@ -10,7 +10,7 @@ public record CreateUser
 
     [Required]
     [EmailAddress]
-    public string email { get; init; }
+    public string Email { get; init; }
 
     [Required]
     public string Password { get; init; }
