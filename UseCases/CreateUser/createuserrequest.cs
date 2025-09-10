@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Simuladoprovajava.UseCases.CreateUser;
 
-public record CreateUser
+public record CreateUserRequest
 {
 
     [Required]
