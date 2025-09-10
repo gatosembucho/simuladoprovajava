@@ -10,7 +10,7 @@ public record CreateUserRequest
 
     [Required]
     [EmailAddress]
-    public string email { get; init; }
+    public string Email { get; init; }
 
     [Required]
     public string Password { get; init; }

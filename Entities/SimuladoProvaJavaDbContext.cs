@@ -20,7 +20,7 @@ namespace Simuladoprovajava.Entities;
                 .OnDelete(DeleteBehavior.Cascade);
 
             model.Entity<Fanfic>()
-                .HasOne(s => s.Shelf)
+                .HasMany(s => s.Shelves)
                 .WithMany(f => f.Fanfics)
                 .HasForeignKey(s => s.ShelfID)
                 .OnDelete(DeleteBehavior.Cascade);
