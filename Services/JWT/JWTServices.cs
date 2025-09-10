@@ -1,3 +1,8 @@
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Text;
+using Microsoft.IdentityModel.Tokens;
+
 namespace SimuladoProvaJava.Services.JWT;
 
 public class JWTService : IJWTService
@@ -8,7 +13,7 @@ public class JWTService : IJWTService
         var keyBytes = Encoding.UTF8.GetBytes(jwtSecret);
         var key = new SymmetricSecurityKey(keyBytes);
 
-        var jwt = new JwtSecurityToken(
+        var jwt = new System.IdentityModel.Tokens.Jwt.JwtSecurityToken(
             claims: [
 
                 new Claim(ClaimTypes.NameIdentifier, data.UserId.ToString()),

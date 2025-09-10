@@ -11,7 +11,8 @@
           "Microsoft.EntityFrameworkCore": "9.0.8",
           "Microsoft.EntityFrameworkCore.Design": "9.0.8",
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.8",
-          "Microsoft.EntityFrameworkCore.Tools": "9.0.8"
+          "Microsoft.EntityFrameworkCore.Tools": "9.0.8",
+          "UseCases": "1.0.0"
         },
         "runtime": {
           "simuladoprovajava.dll": {}
@@ -1008,6 +1009,14 @@
             "fileVersion": "6.0.21.52210"
           }
         }
+      },
+      "UseCases/1.0.0": {
+        "runtime": {
+          "lib/net9.0/UseCases.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
       }
     }
   },
@@ -1569,6 +1578,13 @@
       "sha512": "sha512-IXoJOXIqc39AIe+CIR7koBtRGMiCt/LPM3lI+PELtDIy9XdyeSrwXFdWV9dzJ2Awl0paLWUaknLxFQ5HpHZUog==",
       "path": "system.windows.extensions/6.0.0",
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
+    },
+    "UseCases/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-t1OPgmjHwFxvl4SzIHbzQKCOUCDoU4RcUluIgmung4VFcQgBouO2I/EqO0Wc5f1GC1MJHTZt+oE2UKZR0x0Ehg==",
+      "path": "usecases/1.0.0",
+      "hashPath": "usecases.1.0.0.nupkg.sha512"
     }
   }
 }

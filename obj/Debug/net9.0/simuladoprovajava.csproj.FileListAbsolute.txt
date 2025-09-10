@@ -161,3 +161,4 @@ c:\Users\malu_\simulado\simuladoprovajava\obj\Debug\net9.0\refint\simuladoprovaj
 c:\Users\malu_\simulado\simuladoprovajava\obj\Debug\net9.0\simuladoprovajava.pdb
 C:\Users\malu_\simulado\simuladoprovajava\obj\Debug\net9.0\simuladoprovajava.genruntimeconfig.cache
 C:\Users\malu_\simulado\simuladoprovajava\obj\Debug\net9.0\ref\simuladoprovajava.dll
+C:\Users\malu_\simulado\simuladoprovajava\bin\Debug\net9.0\UseCases.dll

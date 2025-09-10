@@ -1,6 +1,13 @@
 using Simuladoprovajava.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
+using Simuladoprovajava.UseCases.CreateUser;
+using Simuladoprovajava.UseCases.CreateShelf;
+using Simuladoprovajava.UseCases.WriteFanfiction;
+using Simuladoprovajava.UseCases.AddToShelf;
+using Simuladoprovajava.UseCases.DeleteFanfiction;
+using Simuladoprovajava.UseCases.ViewShelves;
+using Simuladoprovajava.UseCases.ViewFanfiction;
 
 
 
@@ -14,39 +21,20 @@ builder.Services.AddDbContext<SimuladoprovajavaDbContext>(options =>
     options.UseSqlServer(sqlConn);
 });
 
-var jwtSecret = Environment.GetEnvironmentVariable("JWT_SECRET");
-var keyBytes = Encoding.UTF8.GetBytes(jwtSecret);
-var key = new SymmetricSecurityKey(keyBytes);
+builder.Services.AddScoped<CreateUserUseCase>();
+builder.Services.AddScoped<CreateShelfUseCase>();
+builder.Services.AddScoped<WriteFanfictionUseCase>();
+builder.Services.AddScoped<AddToShelfUseCase>();
+builder.Services.AddScoped<DeleteFanfictionUseCase>();
+builder.Services.AddScoped<ViewShelvesUseCase>();
+builder.Services.AddScoped<ViewFanfictionUseCase>();
 
-builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-    .AddJwtBearer(Options =>
-    {
-        Options.TokenValidationParameters = new()
-        {
-            ValidateIssuer = false,
-            ValidateAudience = false,
-            ValidIssuer = "simuladoprovajava",
-            ValidateIssuerSigningKey = true,
-            ValidateLifetime = true,
-            ClockSkew = TimeSpan.Zero,
 
-            IssuerSigningKey = key,
-        };
-    });
-
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
-
-builder.Services.AddAuthorization();
-builder.Services.AddAuthorization();
 
 var app = builder.Build();
 
-app.UseAuthentication();
-app.UseAuthorization();
 
-app.UseSwagger();
-app.UseSwaggerUI();
+
 
 
 app.Run();

@@ -1,10 +1,13 @@
+using Microsoft.EntityFrameworkCore;
 using Simuladoprovajava.Entities;
+using SimuladoProvaJava.Services.JWT;
+using SimuladoProvaJava.Services.Password;
 
 namespace Simuladoprovajava.UseCases.Login;
 
-public class LoginUseCase (SimuladoprovajavaDbContext ctx)
+public class LoginUseCase (SimuladoprovajavaDbContext ctx,  IJWTService JWTService)
 {
-      public async Task<Result<LoginResponse>> Do(LoginRequest request)
+      public async Task<Result<LoginResponse>> Do(Login request)
     {
         var user = await ctx.Users
             .FirstOrDefaultAsync(u => u.Email == request.Email);
@@ -13,12 +16,8 @@ public class LoginUseCase (SimuladoprovajavaDbContext ctx)
             return Result<LoginResponse>
                 .Fail("User not found!");
 
-        var PassWordMatch = passwordService
-            .Compare(request.Password, user.Password);
-        if (PassWordMatch is false)
-            return Result<LoginResponse>.Fail("User not found!");
 
-        var jwt = jWTService.CreateToken(new(
+        var jwt = JWTService.CreateToken(new(
             user.ID, user.Name
         ));
 

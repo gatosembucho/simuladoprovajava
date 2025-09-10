@@ -12,7 +12,7 @@ using Simuladoprovajava.Entities;
 namespace simuladoprovajava.Migrations
 {
     [DbContext(typeof(SimuladoprovajavaDbContext))]
-    [Migration("20250908210711_InitialModel")]
+    [Migration("20250910003837_InitialModel")]
     partial class InitialModel
     {
         /// <inheritdoc />

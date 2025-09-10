@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("simuladoprovajava")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+05d386792a7e561dfc1b4fb4f037b243c7ce4f11")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cef17620beeebb3873b05e0e51a5ecc48f5ae720")]
 [assembly: System.Reflection.AssemblyProductAttribute("simuladoprovajava")]
 [assembly: System.Reflection.AssemblyTitleAttribute("simuladoprovajava")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

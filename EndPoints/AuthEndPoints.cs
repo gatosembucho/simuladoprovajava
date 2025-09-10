@@ -1,3 +1,7 @@
+using Microsoft.AspNetCore.Identity.Data;
+using Microsoft.AspNetCore.Mvc;
+using Simuladoprovajava.UseCases.Login;
+
 namespace Simuladoprovajava.EndPoints.Auth;
 
 public static class AuthEndpoints
@@ -6,7 +10,7 @@ public static class AuthEndpoints
     {
         app.MapPost("auth", async (
             HttpContext http,
-            [FromBody] LoginRequest request,
+            [FromBody] Login request,
             [FromServices]LoginUseCase useCase) =>
         {
             var response = await useCase.Do(request);

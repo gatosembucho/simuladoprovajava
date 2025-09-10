@@ -1,5 +1,5 @@
 using System.ComponentModel.DataAnnotations;
-using SimuladoProvaJava.Validations;
+// using SimuladoProvaJava.Validations;
 namespace Simuladoprovajava.UseCases.WriteFanfiction;
 
 public record WriteFanfictionRequest
@@ -8,8 +8,8 @@ public record WriteFanfictionRequest
     public string Title { get; init; }
 
 
-    [MaxLines]
-    [MaxWords]
+    // [MaxLines]
+    // [MaxWords]
     [Required]
     [MaxLength(6000)]
     public string Text { get; init; }
